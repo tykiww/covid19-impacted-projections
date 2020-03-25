@@ -28,7 +28,10 @@ plot_metric: the metric to be plotted.
 ![alt text](MethodologyExamples/decompose_LS_method.png "")
 
 ### 2.2. Signal-Trend Decomposition with ARIMA Model
+![alt text](MethodologyExamples/decompose_ARIMA_method.png "")
+
 ### 2.3. Simple Lagged Yearly Comp Method
+![alt text](MethodologyExamples/lag_comp_method.png "")
 
 
 
