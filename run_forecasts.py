@@ -99,11 +99,11 @@ for curr_group in all_groups:
 				curr_proj_df['proj_'+metric] = (mean(timeseries)/mean(avg_first_year))*avg_first_year
 			else:
 				if method == 'lag_comp':
-					curr_proj_df['proj_'+metric] = forecast_lag_comp(timeseries, 20, 52-week_start)
+					curr_proj_df['proj_'+metric] = forecast_lag_comp(timeseries, 20, 52-week_start+1)
 				elif method == 'decomp_LS':
-					curr_proj_df['proj_'+metric] = forecast_decomp_LS(timeseries, 2, 52-week_start)
+					curr_proj_df['proj_'+metric] = forecast_decomp_LS(timeseries, 2, 52-week_start+1)
 				elif method == 'decomp_arima':
-					curr_proj_df['proj_'+metric] = forecast_decomp_arima(timeseries, 52-week_start)
+					curr_proj_df['proj_'+metric] = forecast_decomp_arima(timeseries, 52-week_start+1)
 				else:
 					print('No forecast method selected')
 					sys.exit()
