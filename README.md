@@ -37,6 +37,12 @@ plot_metric: the metric to be plotted.
 
 ## 2. Methodology Review
 ### 2.1. Signal-Trend Decomposition and LS Regression
+This method works by using pythons built-in decomposition algorithm to split the signal into its trend and seasonal components and then forecasting the components individually. 
+
+The trend is extracted from the signal by computing a running mean with length equal to the expected seasonality (is this case we use a 52-week running average). Once the trend is removed from the original signal, the seasonal component is removed using a convolution filter. What remains after extracting the trend and seasonal components is the raw residuals.
+
+We project future values for the trend using weighted linear regression (we weight the more recent data higher). The seasonal component is projected repetitively. And the residual component is projected using its mean. Finally, the individual components are added back together for our projection of the original signal.
+
 ![alt text](MethodologyExamples/decompose_LS_method.png "")
 
 ### 2.2. Signal-Trend Decomposition with ARIMA Model
