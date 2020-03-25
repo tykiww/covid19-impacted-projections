@@ -9,7 +9,7 @@ There are only a few parameters that need to be adjusted within with each script
 For run_forecasts.py, the user must set:
 ```
 year_start: the year the user wants to make projections for.
-week_start: the week where the projections should start (i.e. a value of 10 means that you wanted to use the first 9 weeks of the year as part of the training data.)
+week_start: the week where the projections should start (i.e. a value of 10 means that you want to use the first 9 weeks of the year as part of the training data.)
 metric_list: This list should contain all the metrics that are present as columns in your data input file (format specified below).
 method: selects which of three methods should be used to make the projections. A description of each method is given below.
 input_file: file location of the input data.
