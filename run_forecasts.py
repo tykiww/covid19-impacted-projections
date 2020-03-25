@@ -2,12 +2,14 @@ from numpy import *
 import pandas as pd
 import matplotlib.pyplot as plt
 import itertools
+import sys
 from forecast_methods import *
 
 # Set params
 year_start = 2019
 week_start = 10
 metric_list = ['revenue','units']
+method = 'lag_comp' # can be 'lag_comp', 'decomp_LS', or 'decomp_arima'
 
 # Read data in and format data to have year-over-year mathcing week numbers (ie. Dec 25 is always in week 52).
 day_exclude = (1,1)
@@ -96,7 +98,16 @@ for curr_group in all_groups:
 				avg_first_year = first_year_data[first_year_data['hierarchy']==curr_group][metric].values
 				curr_proj_df['proj_'+metric] = (mean(timeseries)/mean(avg_first_year))*avg_first_year
 			else:
-				curr_proj_df['proj_'+metric] = forecast_lag_comp(timeseries, 20, 52-week_start)
+				if method == 'lag_comp':
+					curr_proj_df['proj_'+metric] = forecast_lag_comp(timeseries, 20, 52-week_start)
+				elif method == 'decomp_LS':
+					curr_proj_df['proj_'+metric] = forecast_decomp_LS(timeseries, 2, 52-week_start)
+				elif method == 'decomp_arima':
+					curr_proj_df['proj_'+metric] = forecast_decomp_arima(timeseries, 52-week_start)
+				else:
+					print('No forecast method selected')
+					sys.exit()
+
 		
 
 		curr_proj_df['hierarchy'] = curr_group

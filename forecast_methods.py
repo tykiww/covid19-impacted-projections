@@ -31,7 +31,7 @@ def forecast_decomp_LS(timeseries,power_for_weight_set,num_proj):
 	return projection[-52:]
 
 
-def forecast_arima_decomp(timeseries, num_proj):
+def forecast_decomp_arima(timeseries, num_proj):
 	# Since this method does not allow us to weight more recent data
 	# we do a hard cutoff at the past two years of data at most.
 	timeseries = timeseries[-104:]
@@ -42,7 +42,7 @@ def forecast_arima_decomp(timeseries, num_proj):
 
 	try:
 		arima_model = ARIMA(non_seasonal_timeseries, order=(2,1,1))
-		model_fit = arima_model.fit(order=0)
+		model_fit = arima_model.fit(order=0, disp=0)
 		non_seasonal_projection = list(model_fit.predict(start=1, end=len(timeseries)+num_proj))
 		for i in range(1,len(non_seasonal_projection)):
 			non_seasonal_projection[i] += non_seasonal_projection[i-1]
