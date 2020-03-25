@@ -10,6 +10,7 @@ year_start = 2019
 week_start = 10
 metric_list = ['revenue','units']
 method = 'lag_comp' # can be 'lag_comp', 'decomp_LS', or 'decomp_arima'
+input_file = 'sample_input_data.csv'
 
 # Read data in and format data to have year-over-year mathcing week numbers (ie. Dec 25 is always in week 52).
 day_exclude = (1,1)
@@ -22,7 +23,7 @@ week_df = pd.DataFrame()
 week_df['month_day'] = month_days
 week_df['week_num'] = week_nums
 
-pds_data = pd.read_csv('input_data.csv', header=0)
+pds_data = pd.read_csv(input_file, header=0)
 pds_data['year'] = [int(x.split('-')[0]) for x in pds_data['date_day'].values]
 pds_data['month_day'] = [(int(x.split('-')[1]),int(x.split('-')[2])) for x in pds_data['date_day'].values]
 pds_data = pd.merge(pds_data, week_df).groupby(['hierarchy','store_id','year','week_num']).sum()[['revenue','units']]
