@@ -22,7 +22,7 @@ num_batchs = math.ceil(len(all_hierarchies)/6)
 
 for batch in range(num_batchs):
 	list_hierarchies = all_hierarchies[(batch*6):((batch+1)*6)]
-	fig = plt.figure(figsize=(2*10,2*2*2.6), dpi=200)
+	fig = plt.figure(figsize=(20*(num_columns/3),10*(num_rows/2)), dpi=200)
 	for k in range(len(list_hierarchies)):
 		plot_hierarchy = list_hierarchies[k]
 		plot_real_df = real_df[real_df['hierarchy'] == plot_hierarchy]
