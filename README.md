@@ -1,7 +1,10 @@
 # Time Series Forecasting
+We built this repository to help retailers prepare for, and evaluate the impact of, the COVID-19 epidemic. This repository can be used to forecast future timeseries values, and compare these forecasts against observed values to measure the impact-to-date of fleet-wide influences.
 
+The repository consists of python scripts which utilize various methods of forecasting, and a generic excel model that can be used to track and estimate effects at the store, department, and state level.
 
 ## 1. Code Usage
+
 ### 1.1 File descriptions and order of execution.
 ### 1.2 File parameters.
 There are only a few parameters that need to be adjusted within with each script to get started. 
