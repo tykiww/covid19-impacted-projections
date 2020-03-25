@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import itertools
 from forecast_methods import *
 
+# Set params
 year_start = 2019
 week_start = 10
 metric_list = ['revenue','units']
@@ -103,6 +104,7 @@ for curr_group in all_groups:
 		curr_proj_df['store_id'] = curr_store
 		curr_proj_df['week_num'] = arange(1,53)
 		proj_df = proj_df.append(curr_proj_df)
+
 
 
 real_df.sort_values(['hierarchy','store_id','year','week_num']).to_csv(f'Output/{year_start}_real.csv', header=True, index=False)
