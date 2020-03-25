@@ -1,7 +1,7 @@
 # Time Series Forecasting
 
 
-## 1. Code Ussage
+## 1. Code Usage
 ### 1.1 File descriptions and order of execution.
 ### 1.2 File parameters.
 There are only a few parameters that need to be adjusted within with each script to get started. 
