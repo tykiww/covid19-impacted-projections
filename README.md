@@ -4,7 +4,7 @@
 ## 1. Code Ussage
 ### 1.1 File descriptions and order of execution.
 ### 1.2 File parameters.
-There are only a few parameters that need to beadjusted within with each script to get started. 
+There are only a few parameters that need to be adjusted within with each script to get started. 
 
 For run_forecasts.py, the user must set:
 ```
@@ -17,8 +17,8 @@ input_file: file location of the input data.
 
 And for plot_all_forecasts.py, the user only needs to set:
 ```
-year_start: same value that was in run_forecasts.py
-week_start: "                                     "
+year_start: same value that was used in run_forecasts.py
+week_start: "                                          "
 plot_metric: the metric to be plotted.
 ```
 
