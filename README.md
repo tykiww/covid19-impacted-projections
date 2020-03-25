@@ -1,13 +1,13 @@
 # Time Series Forecasting
 
 
-## Code Ussage
+## 1. Code Ussage
 
 
 
-## Methodology Review
-### Simple Lagged Yearly Comp Method
-### Signal-Trend Decomposition and LS Regression
-### Signal-Trend Decomposition with ARIMA Model
+## 2. Methodology Review
+### 2.1. Simple Lagged Yearly Comp Method
+### 2.2. Signal-Trend Decomposition and LS Regression
+### 2.3. Signal-Trend Decomposition with ARIMA Model
 
 
