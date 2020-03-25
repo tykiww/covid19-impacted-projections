@@ -42,7 +42,7 @@ plot_metric: the metric to be plotted.
 ## 3. Spreadsheet Scenario Planning
 This spreadsheet tabs are colored by their purpose: (1) outputs = green (2) scenario-planning adjustable fields = orange (3) input data = blue.
 ### 3.1. Add Data
-To use this spreadsheet, you will need prediction and actual data on the store-category-week level as produced above. The current spreadsheet is built around revenue and units sold metrics. Data can be copy and pasted into the "Raw Predictions" and "Actual Values" tabs. Columns for store, week, category and one or two metrics should retain the same ordering as the example spreadsheet.
+To use this spreadsheet, you will need prediction and actual data on the store-category-week level as produced from the above Python model (run_forecasts.py). The current spreadsheet is built around revenue and units sold metrics but could be updated for any other metrics of interest. Data can be copy and pasted into the "Raw Predictions" and "Actual Values" tabs. Columns for store, week, category and one or two metrics should retain the same ordering as the example spreadsheet.
 
 Store-region information can be added to the "Store State Lookup" tab.
 
