@@ -24,9 +24,12 @@ plot_metric: the metric to be plotted.
 
 
 ## 2. Methodology Review
-### 2.1. Simple Lagged Yearly Comp Method
-### 2.2. Signal-Trend Decomposition and LS Regression
-### 2.3. Signal-Trend Decomposition with ARIMA Model
+### 2.1. Signal-Trend Decomposition and LS Regression
+![alt text](MethodologyExamples/decompose_LS_method.png "")
+
+### 2.2. Signal-Trend Decomposition with ARIMA Model
+### 2.3. Simple Lagged Yearly Comp Method
+
 
 
 
