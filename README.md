@@ -1,5 +1,5 @@
 # Time Series Forecasting
-We built this repository to help retailers prepare for, and evaluate the impact of, the COVID-19 epidemic. This repository can be used to forecast future timeseries values, and compare these forecasts against observed values to measure the impact-to-date of fleet-wide influences.
+We built this repository to help retailers prepare for, and evaluate the impact of, the COVID-19 epidemic. This repository can be used to forecast future timeseries values, and compare these forecasts against observed values to measure the impact-to-date of fleet-wide influences. For more detail on the motivation behind this project, please see https://marketdial.com/covid-19-model/.
 
 The repository consists of python scripts which utilize various methods of forecasting, and a generic excel model that can be used to track and estimate effects at the store, department, and state level.
 
