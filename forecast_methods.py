@@ -1,6 +1,6 @@
 from numpy import *
 import pandas as pd
-from sklearn import ensemble, linear_model
+from sklearn import linear_model
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.arima_model import ARIMA
 
