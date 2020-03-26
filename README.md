@@ -1,8 +1,10 @@
 # Time Series Forecasting Rebuilt 
 
+![](https://raw.githubusercontent.com/tykiww/imgbucket/master/img/arima12/ener2.png)
+
 This repository is an adaptation of MarketDial's pro-bono forecasting models provided for retailers amidst the current COVID-19 pandemic. "This repository can be used to forecast future timeseries values, and compare these forecasts against observed values to measure the impact-to-date of fleet-wide influences" [(source)](https://github.com/gkropf/timeseries-impacted-projections).
 
-The purpose of this rebuild was twofold:
+The purpose of this rebuild is twofold:
   1) For a more non-technical audience: Create a friendlier and more streamlined approach to generating plots
   2) For parameter tuning abilities: Allow performance adjustment for enhanced accuraccy.
 
@@ -11,7 +13,6 @@ The purpose of this rebuild was twofold:
 So far, none of the model parameters have been changed aside from an added flexibility of the ARIMA parameters. Future updates may include a gridsearch/adapted-weight options or updates on likelihood estimates (still deciding).
 
 Other minor changes may be tracked through the commit history.
-
 
 ## Code Usage
 
