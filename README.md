@@ -50,3 +50,12 @@ default:
 ```
 
 ```
+
+### Some Issues
+
+While working with this code there were several issues that need to be apprehended.
+- The overall algorithm does not consider discontinued branches/stores. This may require a lack of granularity.
+- The overall algorithm does not consider any business units which did not make money in a particular week.
+
+
+This is not to discredit the authors. The work is wonderful. Just some notes added TODO.
