@@ -1,0 +1,9 @@
+
+
+default:
+  start: 2019                                           # Year to start prediction from
+  week: 10                                              # 10 means to use the first 9 weeks of the year as part of the training data.
+  metrics: ['revenue', 'units']                         # Name of prediction aggregates
+  plot_metric: ['revenue']                              # Single plot timeseries metric
+  method: 'lag_comp'                                    # can be 'lag_comp', 'decomp_LS', or 'decomp_arima'
+  input_file: 'dataset/sample_input_data.csv'           # Path to raw input file.
