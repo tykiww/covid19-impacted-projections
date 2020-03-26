@@ -1,6 +1,6 @@
 # Time Series Forecasting Rebuilt 
 
-![](https://raw.githubusercontent.com/tykiww/imgbucket/master/img/arima12/ener2.png)
+![](https://raw.githubusercontent.com/tykiww/timeseries-impacted-projections/master/Output/2020_projections_decomp_LS_0.png)
 
 This repository is an adaptation of MarketDial's pro-bono forecasting models provided for retailers amidst the current COVID-19 pandemic. "This repository can be used to forecast future timeseries values, and compare these forecasts against observed values to measure the impact-to-date of fleet-wide influences" [(source)](https://github.com/gkropf/timeseries-impacted-projections).
 
