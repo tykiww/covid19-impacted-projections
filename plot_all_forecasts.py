@@ -1,7 +1,7 @@
 from numpy import *
 import pandas as pd
 import matplotlib.pyplot as plt
-from sklearn import ensemble, linear_model
+from sklearn import linear_model
 from statsmodels.tsa.seasonal import seasonal_decompose
 import math, itertools
 
